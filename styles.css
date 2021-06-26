@@ -41,7 +41,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #6c757d;
+    color: #3d405b;
 }
 
 a:hover {
@@ -75,26 +75,31 @@ a:hover {
 }
 
 
-/* Resume  */
+/* Containers */
 
-.resume {
+.outer {
     width: 100%;
-    display: inline-block;
-    height: 700px;
-    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .inner {
     display: inline-block;
     background-color: #d8e2dc;
-    /* position: relative; */
-    /* margin-left: 25%;
-    margin-right: 25%; */
-    margin-top: 10px;
     padding: 2%;
     border-radius: 2%;
-    margin-bottom: 30px;
-    width: 45vw;
+    width: 40vw;
+}
+
+
+/* Resume  */
+
+#resume {
+    margin: 15px 0 15px;
+}
+
+.work {
+    margin-top: 30px;
 }
 
 .inner>h4 {
@@ -106,27 +111,39 @@ a:hover {
     float: right;
 }
 
+.imglink {
+    position: absolute;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
 
 /* Projects  */
 
+#projects {
+    margin-bottom: 30px;
+}
+
 .row {
     clear: both;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .box {
     width: 35%;
-    display: inline-block;
     margin: 20px;
     background-color: #34a0a4;
-    padding: 10px;
+    padding: 1%;
     border-radius: 1%;
+    align-items: center;
 }
 
 .img {
     background-color: black;
     width: 100%;
-    height: 15vw;
+    height: 12vw;
     border-radius: 1%;
 }
 
@@ -141,7 +158,7 @@ a:hover {
     height: 20px;
     width: 100%;
     background-color: white;
-    color: #6c757d;
+    color: #3d405b;
 }
 
 .footer>p {
