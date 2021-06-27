@@ -63,6 +63,7 @@ a:hover {
 
 .about-item {
     margin: 5px;
+    padding: 1%;
 }
 
 .about-item-text {
@@ -111,10 +112,8 @@ a:hover {
     float: right;
 }
 
-.imglink {
-    position: absolute;
-    margin-left: 20px;
-    margin-bottom: 10px;
+.wake {
+    position: relative;
 }
 
 
@@ -138,6 +137,7 @@ a:hover {
     padding: 1%;
     border-radius: 1%;
     align-items: center;
+    font-size: small;
 }
 
 .img {
@@ -179,4 +179,34 @@ footer>p span {
 
 .link:hover {
     color: #34a0a4;
+}
+
+.about-item-text p {
+    font-size: small;
+    margin-bottom: 0px;
+}
+
+.about-item-text i {
+    font-size: small;
+    margin-left: 10px;
+}
+
+.cat-dog {
+    background-image: url("images/catdog.png");
+    background-size: contain;
+}
+
+.cat {
+    background-image: url("images/taco.png");
+    background-size: contain;
+}
+
+.resume {
+    background-image: url("images/resume.jpeg");
+    background-size: contain;
+}
+
+.folder {
+    background-image: url("images/folder.jpeg");
+    background-size: contain;
 }
