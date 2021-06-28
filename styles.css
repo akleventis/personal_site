@@ -4,8 +4,12 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-p {
-    font-size: small;
+a:hover {
+    color: #34a0a4;
+}
+
+ul {
+    font-size: 13px;
 }
 
 
@@ -34,6 +38,7 @@ p {
     margin: 0;
     padding: 0;
     background-color: white;
+    font-size: 15px;
 }
 
 .nav ul li {
@@ -43,45 +48,42 @@ p {
     width: 33.33333333%
 }
 
-a {
+.nav a {
     text-decoration: none;
     color: #3d405b;
 }
 
-a:hover {
-    color: #34a0a4;
-}
-
-a.r {
+a.anchor {
     display: block;
     position: relative;
-    top: -60px;
-    visibility: hidden;
-}
-
-a.p {
-    display: block;
-    position: relative;
-    top: -45px;
+    top: -55px;
     visibility: hidden;
 }
 
 
 /* About */
 
+.header {
+    position: relative;
+}
+
 .about-container {
-    position: flex;
     padding-top: 130px;
     padding-bottom: 100px;
-    width: 100%;
     background-color: #34a0a4;
+    display: flex;
+    justify-content: center;
+}
+
+.alex {
+    position: absolute;
+    left: 60%;
+    width: 401px;
 }
 
 .screen {
-    max-width: 500px;
+    width: 500px;
     color: white;
-    margin-left: 10%;
-    margin-right: 10%;
     background-color: #3d405b;
     font-size: small;
     border-radius: 5px;
@@ -103,7 +105,6 @@ a.p {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background-color: #d8e2dc;
-    color: #3d405b;
 }
 
 .heading-container div {
@@ -111,7 +112,6 @@ a.p {
     border-radius: 50%;
     width: 15px;
     text-align: center;
-    font-size: 12px;
 }
 
 .one {
@@ -145,16 +145,32 @@ a.p {
     width: 40vw;
 }
 
-.inner>h4 {
+.inner h4 {
     text-align: center;
     margin-top: 0;
 }
+
+
+/* #resume>div:first-of-type {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 15px;
+    padding-bottom: 0;
+} */
 
 .resume {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin-top: 15px;
+    padding-bottom: 0;
 }
+
+
+/* #projects > div:first-of-type {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 30px;
+} */
 
 .projects {
     border-bottom-left-radius: 10px;
@@ -162,19 +178,52 @@ a.p {
     margin-bottom: 30px;
 }
 
-.work {
+.experience {
     margin-top: 30px;
+    font-size: 15px;
 }
 
 
-/* School Work Info Positioning */
+/* School & Work Info Positioning */
 
 .r-info {
     position: relative;
+    font-size: 14px;
+    margin-top: 25px;
 }
 
 .r-info span {
     float: right;
+}
+
+.orgnization {
+    margin-left: 40px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.orgnization-bitly {
+    margin-left: 45px;
+    margin-bottom: 5px;
+}
+
+.logo {
+    position: absolute;
+    bottom: 22px;
+}
+
+.title {
+    margin-top: 0;
+}
+
+.coursework {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.inner ul {
+    margin-top: 0;
+    list-style: circle;
 }
 
 
@@ -183,6 +232,14 @@ a.p {
 #projects {
     margin-bottom: 30px;
     font-size: small;
+    padding-top: 0;
+}
+
+.box p {
+    background-color: #e8e8e4;
+    border-radius: 5px;
+    margin-top: 3px;
+    padding: 7px;
 }
 
 .row {
@@ -193,20 +250,37 @@ a.p {
 }
 
 .box {
-    width: 35%;
+    width: 30%;
     margin: 20px;
     background-color: #34a0a4;
     padding: 1%;
-    border-radius: 1%;
+    border-radius: 5px;
     align-items: center;
-    font-size: small;
+    font-size: 12px;
 }
 
-.img {
-    background-color: black;
+.box .img {
+    background-color: transparent;
     width: 100%;
-    height: 12vw;
-    border-radius: 1%;
+    height: 7vw;
+    border-radius: 5%;
+    background-size: cover;
+}
+
+.cat {
+    background-image: url("images/cat.png");
+}
+
+.dog {
+    background-image: url("images/dog1.png");
+}
+
+.house {
+    background-image: url("images/house1.png");
+}
+
+.file {
+    background-image: url("images/resume.png");
 }
 
 
@@ -243,25 +317,18 @@ footer>p span {
     color: #34a0a4;
 }
 
-.cat-dog {
-    background-image: url("images/catdog.png");
-    background-size: contain;
+
+/* font sizing  */
+
+.education {
+    font-size: 15px;
 }
 
-.cat {
-    background-image: url("images/taco.png");
-    background-size: contain;
-}
-
-.res {
-    background-image: url("images/resume.jpeg");
-    background-size: contain;
-}
-
-.folder {
-    background-image: url("images/folder.jpeg");
-    background-size: contain;
+.experience {
+    font-size: 15px;
 }
 
 
-/* <img src="images/bitly.png" height=40px width=40px> */
+/* .inner p:first-child {
+    font-size: 15px;
+} */

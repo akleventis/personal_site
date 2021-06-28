@@ -24,44 +24,48 @@
             </ul>
         </div>
         <div id="about" class="about-container">
-            <div class="screen">
-                <div class="heading-container">
-                    <div class="one"></div>
-                    <div class="two"></div>
-                    <div class="three"></div>
+            <img class="alex" src="images/alex.png">
+            <div class="screen-container">
+                <div class="screen">
+                    <div class="heading-container">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
+                    <p>> print("hey i'm alex (:")</p>
+                    <i>~ hey I'm alex (:</i>
+                    <p>> print(hometown)</p>
+                    <i>~ Santa Maria, Ca</i>
+                    <p>> print(interests")</p>
+                    <i>~ ["Snowboarding", "Biking", "Coding", "Books"]</i>
+                    <p>> print(degree)</p>
+                    <i>~ Associates of Applied Science in Computer Programming and Development</i>
+                    <p>> print(resume)</p>
+                    <i>~ resume.pdf</i>
+                    <p>> print(links)</p>
+                    <i>~ [github.com, linkdin.com]</i>
+                    <p>> print(email)</p>
+                    <i>~ alex.leventis1@gmail.com</i>
+                    <p>I</p>
                 </div>
-                <p>> print("hey i'm alex (:")</p>
-                <i>~ hey I'm alex (:</i>
-                <p>> print(hometown)</p>
-                <i>~ Santa Maria, Ca</i>
-                <p>> print(interests")</p>
-                <i>~ ["Snowboarding", "Biking", "Coding", "Books"]</i>
-                <p>> print(degree)</p>
-                <i>~ Associates of Applied Science in Computer Programming and Development</i>
-                <p>> print(resume)</p>
-                <i>~ resume.pdf</i>
-                <p>> print(links)</p>
-                <i>~ [github.com, linkdin.com]</i>
-                <p>> print(email)</p>
-                <i>~ alex.leventis1@gmail.com</i>
-                <p>I</p>
             </div>
         </div>
     </header>
     <div class="outer">
-        <a id="resume" class="r"></a>
+        <a id="resume" class="anchor"></a>
         <div class="inner resume">
             <h4>Resume</h4>
-            <p>Education</p>
+            <p class="education">Education</p>
             <div class="r-info">
-                <p>Wake Technical Community College
+                <a href="https://www.waketech.edu/" target="_blank"><img class="logo" src="images/wake.png" height=40px width=40px></a>
+                <p class="orgnization">Wake Technical Community College</a>
                     <span class="right">2020 - 2022</span>
                 </p>
-                <p>Associates of Applied Science in Computer Programming and Development
+                <p class="title"><i>Associates of Applied Science in Computer Programming and Development</i>
                     <span class="right">Raleigh, Nc</span>
                 </p>
             </div>
-            <p>Related Coursework</p>
+            <p class="coursework">Related Coursework</p>
             <ul>
                 <li>Computing Fundamentals</li>
                 <li>Web, Pgm, Db Foundation</li>
@@ -73,12 +77,13 @@
                 <li>Software Development</li>
                 <li>Advanced Python & Java Programming</li>
             </ul>
-            <p class="work">Experience</p>
+            <p class="experience">Experience</p>
             <div class="r-info">
-                <p>Bitly
+                <a href="https://bitly.com/" target="_blank"><img class="logo" src="images/bitly.png" height=40px width=40px></a>
+                <p class="orgnization-bitly">Bitly
                     <span class="right">Summer 2021</span>
                 </p>
-                <p>Backend Engineering Intern<span class="right">Remote</span>
+                <p class="title"><i>Backend Engineering Intern</i><span class="right">Remote</span>
                 </p>
             </div>
             <ul>
@@ -90,43 +95,48 @@
         </div>
     </div>
     <div class="outer">
-        <a id="projects" class="p"></a>
+        <a id="projects"></a>
         <div class="inner projects">
             <h4>Projects</h4>
             <div class="row">
                 <div class="box">
-                    <div class="img cat-dog">
+                    <div class="img dog">
                     </div>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus risus, mollis nec metus at, lacinia gravida dui. Vestibulum id justo dignissim, iaculis turpis quis, tempor nisl. Proin non consectetur libero. Vestibulum ante ipsum
-                        primis in faucibus orci luctus et ultrices </p>
+                    <p class="text">This Cat/Dog API developed with Spring boot as a foundation for simple CRUD operations on a database. Client is able to add, update, and delete the Cats and Dogs stored in the database. Organized by controller, entity, repository,
+                        and service packages.
+                    </p>
                 </div>
                 <div class="box">
-                    <div class="img cat">
+                    <div class="img file">
                     </div>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus risus, mollis nec metus at, lacinia gravida dui. Vestibulum id justo dignissim, iaculis turpis quis, tempor nisl. Proin non consectetur libero. Vestibulum ante ipsum
-                        primis in faucibus orci luctus et ultrices </p>
+                    <p class="text">This application was designed to build and format a resume. User interface prompts for information, inputs can be dynamically created, and everything is injected into the document. Once submitted, a pop up window will appear with the
+                        completed resume.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="box">
-                    <div class="img res">
+                    <div>
+                        <div class="img cat">
+                        </div>
                     </div>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus risus, mollis nec metus at, lacinia gravida dui. Vestibulum id justo dignissim, iaculis turpis quis, tempor nisl. Proin non consectetur libero. Vestibulum ante ipsum
-                        primis in faucibus orci luctus et ultrices
+                    <p class="text">Used an xhttp request to fetch random cat images from this API. Images are dispalyed with buttons allowing for users to move images around, stack them on top of each other, and clear the screen to start over.
                     </p>
                 </div>
                 <div class="box">
-                    <div class="img folder">
+                    <div class="img house">
                     </div>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus risus, mollis nec metus at, lacinia gravida dui. Vestibulum id justo dignissim, iaculis turpis quis, tempor nisl. Proin non consectetur libero. Vestibulum ante ipsum
-                        primis in faucibus orci luctus et ultrices </p>
+                    <p class="text">Built throughout the semester while studying core concepts of OOP. This simple application lets users create house objects and form them together into subdivisions. Methods implemented include sorting, updating, writing to a text file...
+                        etc.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
     <footer>
         <div class="footer">
-            <p><span>© Alex Leventis 2021</span><span class="link">email</span><span class="link">linkdin</span></p>
+            <p><span>© Alex Leventis 2021</span><span class="link"><a href="https://bit.ly/2Tnd6fW"
+                        target="_blank">Linkdin</a></span><span class="link"><a href="https://bit.ly/3wcMRaV"
+                        target="_blank">Github</a></span></p>
         </div>
     </footer>
 </body>
