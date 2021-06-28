@@ -4,6 +4,10 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+p {
+    font-size: small;
+}
+
 
 /* Navigation */
 
@@ -48,35 +52,85 @@ a:hover {
     color: #34a0a4;
 }
 
+a.r {
+    display: block;
+    position: relative;
+    top: -60px;
+    visibility: hidden;
+}
+
+a.p {
+    display: block;
+    position: relative;
+    top: -45px;
+    visibility: hidden;
+}
+
 
 /* About */
 
 .about-container {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
+    position: flex;
     padding-top: 130px;
     padding-bottom: 100px;
     width: 100%;
     background-color: #34a0a4;
 }
 
-.about-item {
-    margin: 5px;
-    padding: 1%;
-}
-
-.about-item-text {
+.screen {
+    max-width: 500px;
     color: white;
-    height: 500px;
-    width: 500px;
     margin-left: 10%;
+    margin-right: 10%;
     background-color: #3d405b;
-    border-radius: 2%;
+    font-size: small;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.about-container i {
+    margin: 0 0 10px 25px;
+}
+
+.about-container p {
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+
+.heading-container {
+    display: flex;
+    height: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #d8e2dc;
+    color: #3d405b;
+}
+
+.heading-container div {
+    margin: 3px 3px 3px 5px;
+    border-radius: 50%;
+    width: 15px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.one {
+    background-image: url(images/x.png);
+    background-size: cover;
+}
+
+.two {
+    background-image: url(images/minimize.png);
+    background-size: cover;
+}
+
+.three {
+    background-image: url(images/expand.png);
+    background-size: cover;
 }
 
 
-/* Containers */
+/* Container */
 
 .outer {
     width: 100%;
@@ -88,19 +142,7 @@ a:hover {
     display: inline-block;
     background-color: #d8e2dc;
     padding: 2%;
-    border-radius: 2%;
     width: 40vw;
-}
-
-
-/* Resume  */
-
-#resume {
-    margin: 15px 0 15px;
-}
-
-.work {
-    margin-top: 30px;
 }
 
 .inner>h4 {
@@ -108,12 +150,31 @@ a:hover {
     margin-top: 0;
 }
 
-.right {
-    float: right;
+.resume {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 15px;
 }
 
-.wake {
+.projects {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.work {
+    margin-top: 30px;
+}
+
+
+/* School Work Info Positioning */
+
+.r-info {
     position: relative;
+}
+
+.r-info span {
+    float: right;
 }
 
 
@@ -121,6 +182,7 @@ a:hover {
 
 #projects {
     margin-bottom: 30px;
+    font-size: small;
 }
 
 .row {
@@ -181,16 +243,6 @@ footer>p span {
     color: #34a0a4;
 }
 
-.about-item-text p {
-    font-size: small;
-    margin-bottom: 0px;
-}
-
-.about-item-text i {
-    font-size: small;
-    margin-left: 10px;
-}
-
 .cat-dog {
     background-image: url("images/catdog.png");
     background-size: contain;
@@ -201,7 +253,7 @@ footer>p span {
     background-size: contain;
 }
 
-.resume {
+.res {
     background-image: url("images/resume.jpeg");
     background-size: contain;
 }
@@ -210,3 +262,6 @@ footer>p span {
     background-image: url("images/folder.jpeg");
     background-size: contain;
 }
+
+
+/* <img src="images/bitly.png" height=40px width=40px> */
