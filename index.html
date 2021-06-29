@@ -9,11 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet" />
-    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">  
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>My Site</title>
 </head>
 
-<body>
+<body onload="loop()">
     <header>
         <div class="nav">
             <h3>Alex Leventis</h3>
@@ -24,7 +27,7 @@
             </ul>
         </div>
         <div id="about" class="about-container">
-            <img class="alex" src="images/alex.png">
+            <!-- <img class="alex" src="images/alex.png"> -->
             <div class="screen-container">
                 <div class="screen">
                     <div class="heading-container">
@@ -32,21 +35,22 @@
                         <div class="two"></div>
                         <div class="three"></div>
                     </div>
-                    <p>> print("hey i'm alex (:")</p>
-                    <i>~ hey I'm alex (:</i>
-                    <p>> print(hometown)</p>
-                    <i>~ Santa Maria, Ca</i>
-                    <p>> print(interests")</p>
-                    <i>~ ["Snowboarding", "Biking", "Coding", "Books"]</i>
-                    <p>> print(degree)</p>
-                    <i>~ Associates of Applied Science in Computer Programming and Development</i>
-                    <p>> print(resume)</p>
-                    <i>~ resume.pdf</i>
-                    <p>> print(links)</p>
-                    <i>~ [github.com, linkdin.com]</i>
-                    <p>> print(email)</p>
-                    <i>~ alex.leventis1@gmail.com</i>
-                    <p>I</p>
+                    <p id="1"></p>
+                    <i id="a"></i>
+                    <p id="2"></p>
+                    <i id="b"></i>
+                    <p id="3"></p>
+                    <i id="c"></i>
+                    <p id="4"></p>
+                    <i id="d"></i>
+                    <p id="5"></p>
+                    <i id="e"></i>
+                    <p id="6"></p>
+                    <i id="f"></i>
+                    <p id="7"></p>
+                    <i id="g"></i>
+                    <p id="8"></p>
+                    <p id="h"></p>
                 </div>
             </div>
         </div>
@@ -139,6 +143,7 @@
                         target="_blank">Github</a></span></p>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
