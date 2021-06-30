@@ -11,29 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>My Site</title>
 </head>
 
 <body onload="loop()">
     <header>
-        <div class="nav">
+        <div class="heading">
             <h3>Alex Leventis</h3>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
+            <div class="nav-container">
+                <p><a href="#about">About</a></p>
+                <p><a href="#resume">Resume</a></p>
+                <p><a href="#projects">Projects</a></p>
+            </div>
         </div>
         <div id="about" class="about-container">
-            <!-- <img class="alex" src="images/alex.png"> -->
-            <div class="screen-container">
-                <div class="screen">
-                    <div class="heading-container">
-                        <div class="one"></div>
-                        <div class="two"></div>
-                        <div class="three"></div>
+            <div class="terminal-container">
+                <div class="terminal">
+                    <div class="t-head-container">
+                        <div class="red"></div>
+                        <div class="yellow"></div>
+                        <div class="green"></div>
                     </div>
                     <p id="1"></p>
                     <i id="a"></i>
@@ -57,20 +56,21 @@
     </header>
     <div class="outer">
         <a id="resume" class="anchor"></a>
-        <div class="inner resume">
+        <div class="inner">
             <h4>Resume</h4>
-            <p class="education">Education</p>
-            <div class="r-info">
-                <a href="https://www.waketech.edu/" target="_blank"><img class="logo wake" src="images/wake.png" height=40px width=40px></a>
-                <p class="orgnization">Wake Technical Community College</a>
+            <h5>Education</h5>
+            <div>
+                <a href="https://www.waketech.edu/" target="_blank"><img class="logo wake" src="images/wake.png"
+                        height=40px width=40px></a>
+                <p><b>Wake Technical Community College</b></a>
                     <span class="right">2020 - 2022</span>
                 </p>
-                <p class="title"><i>Associates of Applied Science in Computer Programming and Development</i>
+                <p><i>Associates of Applied Science in Computer Programming and Development</i>
                     <span class="right">Raleigh, Nc</span>
                 </p>
             </div>
-            <p class="coursework">Related Coursework</p>
-            <ul>
+            <p class="c-lst">Related Coursework</p>
+            <ul class="lst">
                 <li>Computing Fundamentals</li>
                 <li>Web, Pgm, Db Foundation</li>
                 <li>Operating Systems Concepts</li>
@@ -81,13 +81,14 @@
                 <li>Software Development</li>
                 <li>Advanced Python & Java Programming</li>
             </ul>
-            <p class="experience">Experience</p>
-            <div class="r-info">
-                <a href="https://bitly.com/" target="_blank"><img class="logo bit" src="images/bitly.png" height=40px width=40px></a>
-                <p class="orgnization-bitly">Bitly
+            <h5>Experience</h5>
+            <div>
+                <a href="https://bitly.com/" target="_blank"><img class="logo bit" src="images/bitly.png" height=40px
+                        width=40px></a>
+                <p><b>Bitly</b>
                     <span class="right">Summer 2021</span>
                 </p>
-                <p class="title"><i>Backend Engineering Intern</i><span class="right">Remote</span>
+                <p><i>Backend Engineering Intern</i><span class="right">Remote</span>
                 </p>
             </div>
             <ul>
@@ -100,20 +101,24 @@
     </div>
     <div class="outer">
         <a id="projects"></a>
-        <div class="inner projects">
+        <div class="inner">
             <h4>Projects</h4>
             <div class="row">
                 <div class="box">
                     <div class="img dog">
                     </div>
-                    <p class="text">This Cat/Dog API developed with Spring boot as a foundation for simple CRUD operations on a database. Client is able to add, update, and delete the cats and dogs stored in the database. Organized by controller, entity, repository,
+                    <p class="text">This Cat/Dog API developed with Spring boot as a foundation for simple CRUD
+                        operations on a database. Client is able to add, update, and delete the cats and dogs stored in
+                        the database. Organized by controller, entity, repository,
                         and service packages.
                     </p>
                 </div>
                 <div class="box">
                     <div class="img file">
                     </div>
-                    <p class="text">This application was designed to build and format a resume. User interface prompts for information, inputs can be dynamically created, and everything is injected into the document. Once submitted, a pop up window will appear with the
+                    <p class="text">This application was designed to build and format a resume. User interface prompts
+                        for information, inputs can be dynamically created, and everything is injected into the
+                        document. Once submitted, a pop up window will appear with the
                         completed resume.</p>
                 </div>
             </div>
@@ -123,13 +128,17 @@
                         <div class="img cat">
                         </div>
                     </div>
-                    <p class="text">Used an xhttp request to fetch random cat images from this API. Images are dispalyed with buttons allowing for users to move images around, stack them on top of each other, and clear the screen to start over.
+                    <p class="text">Used an xhttp request to fetch random cat images from this API. Images are dispalyed
+                        with buttons allowing for users to move images around, stack them on top of each other, and
+                        clear the screen to start over.
                     </p>
                 </div>
                 <div class="box">
                     <div class="img house">
                     </div>
-                    <p class="text">Built throughout the semester while studying core concepts of OOP. This simple application lets users create house objects and form them together into subdivisions. Methods implemented include sorting, updating, writing to a text file...
+                    <p class="text">Built throughout the semester while studying core concepts of OOP. This simple
+                        application lets users create house objects and form them together into subdivisions. Methods
+                        implemented include sorting, updating, writing to a text file...
                         etc.
                     </p>
                 </div>

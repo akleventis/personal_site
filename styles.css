@@ -4,131 +4,113 @@ body {
     background-color: #182027;
 }
 ul {
-    font-size: 13px;
+    font-size: 17px;
 }
-
 
 /* Navigation */
 
-.nav {
+.heading {
     background-color: #262e36;
     z-index: 1;
     position: fixed;
     display: block;
     width: 100%;
+    padding: 10px 0 10px 0;
 }
-.nav a:hover{
+.heading h3 {
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+.nav-container {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #262e36;
+    font-size: 15px;
+    width: 100vw;
+    border-bottom: 1px solid #4078c0;
+}
+
+.nav-container p {
+    margin: 5px 0 10px 0;
+}
+
+.nav-container > p a {
+    color: white;
+    text-decoration: none;
+}
+.nav-container a:hover{
     color: #4078c0;
 }
 
-.nav h3 {
-    padding-top: 8px;
-    padding-bottom: 6px;
-    text-align: center;
-    margin: 0;
-    width: 100%;
-    color: white;
-}
-
-.nav ul {
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    background-color: #262e36;
-    font-size: 15px;
-}
-
-.nav ul li {
-    list-style: none;
-    float: left;
-    padding-bottom: 5px;
-    width: 33.33333333%
-}
-
-.nav a {
-    text-decoration: none;
-    color: white;
-}
-
-a.anchor {
-    display: block;
-    position: relative;
-    top: -55px;
-    visibility: hidden;
-}
-
-
-/* About */
-
-.header {
-}
+/* Top Background */
 
 .about-container {
-    overflow: hidden;
-    padding-top: 130px;
-    padding-bottom: 100px; 
-    position: relative;
+    padding: 130px 0 100px 0;
     background-color:#182027;
 }
 
-.screen {
-    font-family: 'VT323', monospace;
-    width: 35vw;
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 500px;
+/* Terminal Window */
+
+.terminal {
+    font-family: 'Share Tech Mono', monospace;
+    width: 260px;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 550px;
     color: #09ff00;
     background-color: rgb(0, 0, 0, .9);
-    font-size: 20px;
+    font-size: 16px;
     border-radius: 5px;
     padding-bottom: 10px;
-    height: 520px;
+    height: 500px;
 }
 
-.about-container i {
-    margin: 0 0 0 45px;
+.terminal-container i {
+    margin: 0 20px 0 45px;
     display: block;
 }
 
-.about-container p {
+.terminal-container p {
     margin-bottom: 2px;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
-.heading-container {
+.t-head-container {
     display: flex;
     height: 20px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background-color:rgba(58, 57, 57, 0.5);
+    margin-bottom: 35px;
 }
 
-.heading-container div {
+.t-head-container div {
     margin: 3px 3px 3px 5px;
     border-radius: 50%;
     width: 15px;
     text-align: center;
 }
 
-.one {
+.red {
     background-image: url(images/x.png);
     background-size: cover;
 }
 
-.two {
+.yellow {
     background-image: url(images/minimize.png);
     background-size: cover;
 }
 
-.three {
+.green {
     background-image: url(images/expand.png);
     background-size: cover;
 }
 
 
-/* Container */
+/* Outer, Inner Containers */
 
 .outer {
     width: 100%;
@@ -137,78 +119,70 @@ a.anchor {
 }
 
 .inner {
-    display: inline-block;
     background-color: #182027;
     padding: 2%;
     width: 40vw;
     color: white;
     border: 1px solid #4078c0;
     border-radius: 10px;
-    min-width: 700px;
-}
-
-.inner h4 {
-    text-align: center;
-    margin-top: 0;
-
-}
-
-.resume {
-    border-radius: 10px;
-    margin: 15px;
-}
-
-.projects {
-    margin-bottom: 30px;
-}
-
-.experience {
-    margin-top: 30px;
-    font-size: 15px;
+    min-width: 900px;
+    margin-bottom: 20px;
 }
 
 
 /* School & Work Info Positioning */
 
-.r-info {
-    position: relative;
-    font-size: 14px;
-    margin-top: 25px;
+.inner h4 {
+    text-align: center;
+    margin-top: 0;
+    margin: 0;
+    font-size: 25px;
+
+}
+/* 'Education' 'Experience' headers  */
+.inner h5 {
+    margin: 50px 0 0 0;
+    font-size: 20px;
+    border: 1px solid #09ff00;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 8px;
 }
 
-.r-info span {
+.inner div {
+    position: relative;
+    margin-top: 15px;
+}
+
+.inner div span {
     float: right;
 }
 
-.orgnization {
-    margin-left: 40px;
-    margin-bottom: 5px;
-    font-size: 15px;
-}
-
-.orgnization-bitly {
-    margin-left: 45px;
-    margin-bottom: 5px;
+.inner > div > p {
+    margin: 0 40px 3px;
+    font-size: 19px;
 }
 
 .logo {
     position: absolute;
-    bottom: 22px;
 }
 
-.title {
+.inner i {
     margin-top: 0;
 }
-
-.coursework {
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
 .inner ul {
-    margin-top: 0;
+    margin-top: 15px;
     list-style: circle;
 }
+.c-lst {
+    font-size: 17px;
+    margin-top: 15px;
+}
+.lst {
+    margin-bottom: 35px;
+}
+
+
 
 
 /* Projects  */
