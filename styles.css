@@ -141,7 +141,7 @@ ul {
 }
 /* 'Education' 'Experience' headers  */
 .inner h5 {
-    margin: 50px 0 0 0;
+    margin: 40px 0 25px 0;
     font-size: 20px;
     border: 1px solid #09ff00;
     border-radius: 20px;
@@ -149,18 +149,19 @@ ul {
     padding: 8px;
 }
 
+
+/* School/Work span headings */
 .inner div {
     position: relative;
     margin-top: 15px;
 }
 
-.inner div span {
-    float: right;
-}
-
 .inner > div > p {
     margin: 0 40px 3px;
     font-size: 19px;
+}
+.inner div span {
+    float: right;
 }
 
 .logo {
@@ -170,17 +171,30 @@ ul {
 .inner i {
     margin-top: 0;
 }
+
+/* Lists */ 
 .inner ul {
     margin-top: 15px;
     list-style: circle;
 }
+
+.lst {
+    margin-bottom: 35px;
+}
+
+/* "Related Coursework heading" */
 .c-lst {
     font-size: 17px;
     margin-top: 15px;
 }
-.lst {
-    margin-bottom: 35px;
-}
+
+
+
+
+
+
+
+
 
 
 
