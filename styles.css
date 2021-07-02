@@ -7,6 +7,7 @@ body {
 a {
     text-decoration: none;
     color: white;
+    transition: 500ms;
 }
 a:hover {
     color: #2384d3;
@@ -25,6 +26,14 @@ ul {
     display: block;
     width: 100%;
     padding: 10px 0 10px 0;
+    transition: 1000ms;
+}
+.heading:hover {
+    background-color: #11171b;
+}
+.heading:hover .nav-container {
+    border-bottom: 2px solid #0adf03a4;
+    background-color: #11171b;
 }
 .heading h3 {
     text-align: center;
@@ -37,9 +46,10 @@ ul {
     justify-content: space-evenly;
     background-color: #262e36;
     font-size: 17px;
-    width: 100vw;
+    width: 100%;
     border-bottom: 2px solid #1d3e4d;
     border-radius: 15px;
+    transition: 1000ms;
 }
 
 .nav-container p {
@@ -54,27 +64,28 @@ ul {
 /* Top Background */
 
 .about-container {
-    padding: 130px 0 100px 0;
+    padding: 130px 0 50px 0;
     background-color:#182027;
 }
 
 /* Terminal Window */
-
+.terminal-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 .terminal {
     font-family: 'Share Tech Mono', monospace;
-    width: 260px;
-    margin-left: 20%;
-    margin-right: 20%;
     width: 550px;
     color: #09ff00;
-    background-color: rgb(0, 0, 0, .9);
+    background-color: #000000;
+    margin: 20px;
     font-size: 16px;
     border-radius: 8px;
     padding-bottom: 10px;
     height: 500px;
     border: 1px solid #1d3e4d;
 }
-
 
 .terminal-container i {
     margin: 0 20px 0 45px;
@@ -105,26 +116,33 @@ ul {
 
 .red {
     background-color: #fa7d7d;
+    transition: 500ms;
 }
 .yellow {
     background-color: #f0da77;
+    transition: 500ms;
 }
 .green {
     background-color: #64f575;
+    transition: 500ms;
 }
 .terminal:hover .red {
-    background-image: url(images/x.png);
-    background-size: cover;
+    background-color: #ff0000;
 }
 .terminal:hover .yellow {
-    background-image: url(images/minimize.png);
-    background-size: cover; 
+    background-color: #ffd000;
 }
 .terminal:hover .green {
-    background-image: url(images/expand.png);
-    background-size: cover;
+    background-color: #07c700;
 }
 
+/* Profile Picture */
+.image {
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
+    border: 2px solid #1d3e4d;
+}
 
 /* Outer, Inner Containers */
 
@@ -138,10 +156,23 @@ ul {
     background-color: #182027;
     padding: 2%;
     width: 40vw;
-    border: 3px solid #1d3e4d;
+    border: 2px solid #1d3e4d;
     border-radius: 10px;
     min-width: 900px;
+    margin: 20px 0 20px 0;
     margin-bottom: 20px;
+    transition: 1000ms;
+}
+.one {
+    margin-top: 100px;
+}
+.one:hover {
+    background-color: #11171b;
+    border: 2px solid #0adf03a4;
+}
+.two:hover {
+    background-color: #11171b;
+    border: 2px solid #0adf03a4;
 }
 
 .code {
@@ -151,8 +182,8 @@ ul {
     background-color: transparent;
     border-color: transparent;
     position: absolute;
-    transition: 2000ms;
-    left: 770px;
+    transition: 1000ms;
+    left: 85%;
     width: 100px;
     text-align: center;
     border-radius: 20px;
@@ -177,21 +208,22 @@ ul {
 }
 /* 'Education' 'Experience' headers  */
 .inner h5 {
-    margin: 40px 0 25px 0;
+    margin: 40px 0 15px 0;
     font-size: 20px;
     border: 1px solid transparent;
-    border-bottom: 1px solid #1d3e4d;
-    border-radius: 20px;
+    border-radius: 30px;
     display: inline-block;
-    padding: 8px 15px 8px 15px;
+    padding: 8px 25px 8px 25px;
     transition: 1500ms;
 }
+
 .one:hover h5 {
     border: 1px solid #1d3e4d;
 }
 
 
 /* School/Work span headings */
+
 .inner div {
     position: relative;
     margin-top: 15px;
@@ -211,15 +243,23 @@ ul {
 }
 
 /* Lists */ 
+
 .inner ul {
     margin-top: 15px;
     list-style: circle;
 }
 
+/* "Related Coursework heading & list" */
+.c-lst {
+    font-size: 17px;
+    margin-top: 15px;
+}
 .lst {
     height: 250px;
 
 }
+
+/* wake bitly logo  */
 
 .logo {
     position: absolute;
@@ -227,23 +267,14 @@ ul {
     right: 96%;
     border-radius: 50%;
     background-color: transparent;
-    transition: background-color 1s ease-out;
     border: 1px solid transparent;
-    transition: 1500ms;
+    transition: 1000ms;
 }
 .one:hover .logo{
-    /* background-color: #172e38; */
     border: 1px solid #0adf03a4;
     background-color: black;
 
 }
-
-/* "Related Coursework heading" */
-.c-lst {
-    font-size: 17px;
-    margin-top: 15px;
-}
-
 
 /* Projects  */
 
@@ -252,7 +283,7 @@ ul {
     font-size: small;
     padding-top: 0;
 }
-
+/* second .inner div  */
 .two {
     margin-bottom: 60px;
 }
@@ -271,13 +302,13 @@ ul {
     padding: 10px;
     border-radius: 10px;
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
     position: relative;
     overflow: hidden;
     transition: 1000ms;
 }
 .box:hover {
-    border: 2px solid #0adf03a4;
+    border: 2px solid #2384d3;
 }
 
 .box p {
@@ -291,7 +322,7 @@ ul {
     width: 220px;
 }
 
-/* Language boxes */
+/* Language containers */
 .lang {
     display: flex;
     justify-content: space-around;
@@ -306,7 +337,7 @@ ul {
     transition: 1500ms;
     padding: 5px 0 3px 0;
 }
-.box:hover .lang a {
+.two:hover .lang a {
     color: #09ff00;
     border: 2px solid #1d3e4d;
     background-color: black;
@@ -344,6 +375,7 @@ footer {
     background-color: #262e36;
     font-size: 14px;
     color: #a9a9aa;
+    transition: 500ms;
 }
 footer a {
     color: #a9a9aa;
@@ -356,7 +388,10 @@ footer span {
     margin-right: 20px;
     float: right;
 }
-
+footer:hover {
+    border-top: 1px solid #0adf03a4;
+    background-color: #11171b;
+}
 
 
 
