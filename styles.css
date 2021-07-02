@@ -145,28 +145,28 @@ ul {
 }
 
 .code {
-    color: #182027;
-    border: 1px solid #182027;
-    position: absolute;
-    left: 770px;
-    transition: 2000ms;
+    font-family: 'Share Tech Mono', monospace;
+    color: transparent;
+    border: 2px solid transparent;
+    background-color: transparent;
     border-color: transparent;
+    position: absolute;
+    transition: 2000ms;
+    left: 770px;
     width: 100px;
     text-align: center;
     border-radius: 20px;
     font-size: 15px;
+    padding: 5px 0 3px 0;
 
 }
 .inner:hover .code {
     transform: translateY(-35px);
-    animation: text-color 2s forwards;
-    border: 1px solid #059605;
+    color: #09ff00;
+    border: 2px solid #1d3e4d;
+    background-color: black;
 } 
-@keyframes text-color {
-    from {color: white}
-    to {color: #2384d3}
-    
-}
+
 /* School & Work Info Positioning */
 
 .inner h4 {
@@ -179,10 +179,15 @@ ul {
 .inner h5 {
     margin: 40px 0 25px 0;
     font-size: 20px;
-    border: 1px solid #1d3e4d;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #1d3e4d;
     border-radius: 20px;
     display: inline-block;
     padding: 8px 15px 8px 15px;
+    transition: 1500ms;
+}
+.one:hover h5 {
+    border: 1px solid #1d3e4d;
 }
 
 
@@ -218,14 +223,19 @@ ul {
 
 .logo {
     position: absolute;
-    right: 870px;
+    padding: 3px;
+    right: 96%;
     border-radius: 50%;
-    -webkit-transition: background 1s; 
-    transition: border 1s ease; 
-    border-color: transparent;
+    background-color: transparent;
+    transition: background-color 1s ease-out;
+    border: 1px solid transparent;
+    transition: 1500ms;
 }
-.logo:hover{
-    border: 1px solid #3b728b;
+.one:hover .logo{
+    /* background-color: #172e38; */
+    border: 1px solid #0adf03a4;
+    background-color: black;
+
 }
 
 /* "Related Coursework heading" */
@@ -243,7 +253,7 @@ ul {
     padding-top: 0;
 }
 
-.hello {
+.two {
     margin-bottom: 60px;
 }
 
@@ -255,7 +265,7 @@ ul {
 }
 
 .box {
-    border: 1px solid #1d3e4d;
+    border: 2px solid #1d3e4d;
     width: 310px;
     height: 330px;
     padding: 10px;
@@ -264,6 +274,10 @@ ul {
     font-size: 14px;
     position: relative;
     overflow: hidden;
+    transition: 1000ms;
+}
+.box:hover {
+    border: 2px solid #0adf03a4;
 }
 
 .box p {
@@ -283,25 +297,26 @@ ul {
     justify-content: space-around;
 }
 .lang a {
+    font-family: 'Share Tech Mono', monospace;
+    color: #2384d3;
     width: 100px;
-    border: 1px solid #182027;
-    border-radius: 20px;
-    padding: 2px 5px 2px 5px;
+    border: 2px solid transparent;
+    border-radius: 30px;
     margin: 20px 5px 0 5px;
-    transition: 2000ms;
+    transition: 1500ms;
+    padding: 5px 0 3px 0;
 }
 .box:hover .lang a {
-    border: 1px solid #059605;
-    color: #2384d3;
+    color: #09ff00;
+    border: 2px solid #1d3e4d;
+    background-color: black;
 }
-/* .lang a:hover {
-    color: 
-} */
-/* github logo animation */
+
+/* github animation */
 
  .git {
     background-image: url(images/git.png);
-    background-size: contain;
+    background-size: cover;
     height: 60px;
     position: absolute;
     width: 60px;
@@ -309,7 +324,7 @@ ul {
     bottom: 340px;
     margin-top: 0px;
     border-radius: 10px;
-    transition: 2000ms;
+    transition: 1500ms;
 } 
 .box:hover .git {
     transform: translateY(65px) translateX(-70px);
