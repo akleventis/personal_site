@@ -14,7 +14,6 @@ a:hover {
 ul {
     position: relative;
     font-size: 17px;
-    overflow: hidden;
 }
 
 /* Navigation */
@@ -146,19 +145,28 @@ ul {
 }
 
 .code {
+    color: #182027;
+    border: 1px solid #182027;
     position: absolute;
-    border: 1px solid white;
-    left: 950px;
+    left: 770px;
     transition: 2000ms;
+    border-color: transparent;
     width: 100px;
     text-align: center;
-    border: 1px solid #059605;
     border-radius: 20px;
     font-size: 15px;
+
 }
 .inner:hover .code {
-    transform: translateX(-180px);
+    transform: translateY(-35px);
+    animation: text-color 2s forwards;
+    border: 1px solid #059605;
 } 
+@keyframes text-color {
+    from {color: white}
+    to {color: #2384d3}
+    
+}
 /* School & Work Info Positioning */
 
 .inner h4 {
@@ -171,7 +179,7 @@ ul {
 .inner h5 {
     margin: 40px 0 25px 0;
     font-size: 20px;
-    border: 1px solid #059605;
+    border: 1px solid #1d3e4d;
     border-radius: 20px;
     display: inline-block;
     padding: 8px 15px 8px 15px;
@@ -247,7 +255,7 @@ ul {
 }
 
 .box {
-    border: 1px solid #059605;
+    border: 1px solid #1d3e4d;
     width: 310px;
     height: 330px;
     padding: 10px;
@@ -276,18 +284,19 @@ ul {
 }
 .lang a {
     width: 100px;
-    border: 1px solid #1d3e4d;
+    border: 1px solid #182027;
     border-radius: 20px;
     padding: 2px 5px 2px 5px;
     margin: 20px 5px 0 5px;
-    -webkit-transition: background 1s;
-    transition: background 1s;
+    transition: 2000ms;
 }
-.lang a:hover {
-    color: white;
-    background-color: #3a567c;
+.box:hover .lang a {
+    border: 1px solid #059605;
+    color: #2384d3;
 }
-
+/* .lang a:hover {
+    color: 
+} */
 /* github logo animation */
 
  .git {
