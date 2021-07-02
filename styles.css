@@ -12,7 +12,9 @@ a:hover {
     color: #2384d3;
 }
 ul {
+    position: relative;
     font-size: 17px;
+    overflow: hidden;
 }
 
 /* Navigation */
@@ -35,7 +37,7 @@ ul {
     display: flex;
     justify-content: space-evenly;
     background-color: #262e36;
-    font-size: 15px;
+    font-size: 17px;
     width: 100vw;
     border-bottom: 2px solid #1d3e4d;
     border-radius: 15px;
@@ -74,6 +76,7 @@ ul {
     border: 1px solid #1d3e4d;
 }
 
+
 .terminal-container i {
     margin: 0 20px 0 45px;
     display: block;
@@ -104,23 +107,21 @@ ul {
 .red {
     background-color: #fa7d7d;
 }
-.red:hover {
-    background-image: url(images/x.png);
-    background-size: cover;
-}
-
 .yellow {
     background-color: #f0da77;
 }
-.yellow:hover{
-    background-image: url(images/minimize.png);
-    background-size: cover; 
-}
-
 .green {
     background-color: #64f575;
 }
-.green:hover {
+.terminal:hover .red {
+    background-image: url(images/x.png);
+    background-size: cover;
+}
+.terminal:hover .yellow {
+    background-image: url(images/minimize.png);
+    background-size: cover; 
+}
+.terminal:hover .green {
     background-image: url(images/expand.png);
     background-size: cover;
 }
@@ -144,9 +145,20 @@ ul {
     margin-bottom: 20px;
 }
 
-/* .inner:nth-child(2) {
-    margin-bottom:  60px;
-} */
+.code {
+    position: absolute;
+    border: 1px solid white;
+    left: 950px;
+    transition: 2000ms;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #059605;
+    border-radius: 20px;
+    font-size: 15px;
+}
+.inner:hover .code {
+    transform: translateX(-180px);
+} 
 /* School & Work Info Positioning */
 
 .inner h4 {
@@ -154,7 +166,6 @@ ul {
     margin-top: 0;
     margin: 0;
     font-size: 25px;
-
 }
 /* 'Education' 'Experience' headers  */
 .inner h5 {
@@ -181,14 +192,6 @@ ul {
     float: right;
 }
 
-.logo {
-    position: absolute;
-    right: 870px;
-    border-radius: 50%;
-}
-.logo:hover{
-    animation: move 1s forwards;
-}
 
 .inner i {
     margin-top: 0;
@@ -201,7 +204,20 @@ ul {
 }
 
 .lst {
-    margin-bottom: 35px;
+    height: 250px;
+
+}
+
+.logo {
+    position: absolute;
+    right: 870px;
+    border-radius: 50%;
+    -webkit-transition: background 1s; 
+    transition: border 1s ease; 
+    border-color: transparent;
+}
+.logo:hover{
+    border: 1px solid #3b728b;
 }
 
 /* "Related Coursework heading" */
@@ -264,14 +280,12 @@ ul {
     border-radius: 20px;
     padding: 2px 5px 2px 5px;
     margin: 20px 5px 0 5px;
+    -webkit-transition: background 1s;
+    transition: background 1s;
 }
 .lang a:hover {
     color: white;
-    animation: move 1s forwards;
-}
-@keyframes move {
-    0% {background-color:#182027;}
-    100% {background-color: #3a567c;}
+    background-color: #3a567c;
 }
 
 /* github logo animation */
