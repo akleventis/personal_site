@@ -9,7 +9,7 @@ a {
     color: white;
 }
 a:hover {
-    color: #09ff00;
+    color: #2384d3;
 }
 ul {
     font-size: 17px;
@@ -160,7 +160,7 @@ ul {
 .inner h5 {
     margin: 40px 0 25px 0;
     font-size: 20px;
-    border: 1px solid #08c24f;
+    border: 1px solid #059605;
     border-radius: 20px;
     display: inline-block;
     padding: 8px 15px 8px 15px;
@@ -183,6 +183,11 @@ ul {
 
 .logo {
     position: absolute;
+    right: 870px;
+    border-radius: 50%;
+}
+.logo:hover{
+    animation: move 1s forwards;
 }
 
 .inner i {
@@ -206,8 +211,6 @@ ul {
 }
 
 
-
-
 /* Projects  */
 
 #projects {
@@ -216,9 +219,9 @@ ul {
     padding-top: 0;
 }
 
-/* .hello {
+.hello {
     margin-bottom: 60px;
-} */
+}
 
 .row {
     clear: both;
@@ -228,30 +231,68 @@ ul {
 }
 
 .box {
-    border: 1px solid #08c24f;
+    border: 1px solid #059605;
     width: 310px;
-    height: 280px;
+    height: 330px;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
     font-size: 14px;
+    position: relative;
+    overflow: hidden;
 }
 
 .box p {
     border-radius: 5px;
     margin-top: 3px;
     padding: 7px;
-    height:100px;
+    height: 110px;
 }
 
 .box img {
     width: 220px;
 }
-.s {
-    position: relative;
-    height: 10px;
+
+/* Language boxes */
+.lang {
+    display: flex;
+    justify-content: space-around;
 }
-/* footer */
+.lang a {
+    width: 100px;
+    border: 1px solid #1d3e4d;
+    border-radius: 20px;
+    padding: 2px 5px 2px 5px;
+    margin: 20px 5px 0 5px;
+}
+.lang a:hover {
+    color: white;
+    animation: move 1s forwards;
+}
+@keyframes move {
+    0% {background-color:#182027;}
+    100% {background-color: #3a567c;}
+}
+
+/* github logo animation */
+
+ .git {
+    background-image: url(images/git.png);
+    background-size: contain;
+    height: 60px;
+    position: absolute;
+    width: 60px;
+    left: 325px;
+    bottom: 340px;
+    margin-top: 0px;
+    border-radius: 10px;
+    transition: 2000ms;
+} 
+.box:hover .git {
+    transform: translateY(65px) translateX(-70px);
+} 
+
+/* footer  */
 
 footer {
     position: fixed;
@@ -259,7 +300,7 @@ footer {
     bottom: 0;
     height: 25px;
     width: 100%;
-    border-top: 1px solid #4078c0;
+    border-top: 1px solid #1d3e4d;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: #262e36;
@@ -277,17 +318,6 @@ footer span {
     margin-right: 20px;
     float: right;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

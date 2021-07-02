@@ -33,6 +33,6 @@ function loop() {
     i++;
     j++;
     if (i < lst1.length) {
-        setTimeout(loop, 3000);
+        setTimeout(loop, 2500);
     }
 }
