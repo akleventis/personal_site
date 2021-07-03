@@ -5,7 +5,7 @@ var lst1 = [["1", "> print(\"hey i'm alex\")"], ["2", "> print(hometown)"],
 
 var lst2 = [["a", " hey i'm alex"], ["b", " Santa Maria, Ca"],
 ["c", " [\"Snowboarding\", \"Biking\", \"Coding\", \"Books\"]"], ["d", " Associates of Applied Science in Computer Programming and Development"],
-["e", " resume.pdf"], ["f", " [github.com, linkdin.com]"],
+["e", "<a href=\"document/resume.pdf\" target=\"_blank\">resume.pdf</a>"], ["f", " [<a href=\"https://github.com/akleventis\" target=\"_blank\">github.com</a>, <a href=\"https://www.linkedin.com/in/alex-leventis-ab443220b/\" target=\"_blank\">linkdin.com</a>]"],
 ["g", " alex.leventis1@gmail.com"], ["h", ""]]
 
 function terminal(key, value) {
@@ -36,3 +36,9 @@ function loop() {
         setTimeout(loop, 2500);
     }
 }
+
+// var tag = document.createElement("p")
+// var gittag = document.createElement("a href=\"https://github.com/akleventis\" target=\"_blank\"")
+// var linktag = document.createElement("a href=\"https://www.linkedin.com/in/alex-leventis-ab443220b/\" target=\"_blank\"")
+
+

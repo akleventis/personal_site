@@ -91,7 +91,14 @@ ul {
     margin: 0 20px 0 45px;
     display: block;
 }
-
+.terminal-container a {
+    color: #09ff00; 
+    border-bottom: 1px solid transparent;
+    transition: 500ms;
+}
+.terminal-container a:hover {
+    border-bottom: 1px solid #09ff00;
+}
 .terminal-container p {
     margin-bottom: 2px;
     margin-left: 25px;
@@ -142,6 +149,8 @@ ul {
     width: 500px;
     border-radius: 100%;
     border: 2px solid #1d3e4d;
+    background-image: url(images/me.jpg);
+    background-size: cover;
 }
 
 /* Outer, Inner Containers */
