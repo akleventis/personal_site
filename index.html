@@ -5,14 +5,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles.css  -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- AOS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- TypeWriter  -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!-- Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <title>My Site</title>
 </head>
 
@@ -28,7 +35,7 @@
         </div>
         <div id="about" class="about-container">
             <div class="terminal-container">
-                <div class="terminal">
+                <div data-aos="fade-right" data-aos-duration="3000" class="terminal">
                     <div class="t-head-container">
                         <div class="red"></div>
                         <div class="yellow"></div>
@@ -49,10 +56,10 @@
                     <p id="7"></p>
                     <i id="g"></i>
                     <p id="8"></p>
-                    <p id="h"></p>
+                    <i id="h" onclick="img()"></i>
+                    <p id="9"></p>
                 </div>
-                <div class="image">
-                </div>
+                <div id="my_image"></div>
             </div>
 
         </div>
@@ -74,7 +81,6 @@
             </div>
             <p class="c-lst">Related Coursework</p>
             <ul class="lst">
-
                 <li>Computing Fundamentals</li>
                 <a href="https://www.java.com/en/" class="code">Java</a>
                 <li>Web, Pgm, Db Foundation</li>
@@ -116,7 +122,7 @@
         <div class="inner two">
             <h4>Projects</h4>
             <div class="row">
-                <div class="box">
+                <div data-aos="fade-down-right" data-aos-duration="1500" class="box">
                     <a href="https://github.com/akleventis/Cat-Dog-Service" target="_blank" class="git"></a>
                     <img src="images/dog.png" />
                     <p class="text">This Cat/Dog API developed with Spring boot as a foundation for simple CRUD
@@ -130,7 +136,7 @@
                         <a href="https://spring.io/">Spring</a>
                     </div>
                 </div>
-                <div class="box">
+                <div data-aos="fade-down-left" data-aos-duration="1500" class="box">
                     <a href="https://github.com/akleventis/Cat-Project" target="_blank" class="git"></a>
                     <img src="images/cat.png" />
                     <p class="text">Used an xhttp request to fetch random cat images from this API. Images are dispalyed
@@ -144,7 +150,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="box">
+                <div data-aos="fade-up-right" data-aos-duration="1500" class="box">
                     <a href="https://github.com/akleventis/Resume-Builder" class="git" target="_blank"></a>
                     <img src="images/resume.png" />
                     <p class="text">This application was designed to build and format a resume. User interface prompts
@@ -157,7 +163,7 @@
                         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML & CSS</a>
                     </div>
                 </div>
-                <div class="box">
+                <div data-aos="fade-up-left" data-aos-duration="1500" class="box">
                     <a href="https://github.com/akleventis/Spring-Subdivision-Project" target="_blank" class="git"></a>
                     <img src="images/house.png" />
                     <p class="text">Built throughout the semester while studying core concepts of OOP. This simple
@@ -180,6 +186,9 @@
                     target="_blank">Github</a></span></p>
     </footer>
     <script src="index.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

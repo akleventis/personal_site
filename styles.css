@@ -64,26 +64,26 @@ ul {
 /* Top Background */
 
 .about-container {
-    padding: 130px 0 50px 0;
+    padding: 130px 0 0 0;
     background-color:#182027;
 }
 
 /* Terminal Window */
 .terminal-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .terminal {
     font-family: 'Share Tech Mono', monospace;
-    width: 550px;
+    width: 600px;
+    height: 550px;
     color: #09ff00;
     background-color: #000000;
     margin: 20px;
     font-size: 16px;
     border-radius: 8px;
     padding-bottom: 10px;
-    height: 500px;
     border: 1px solid #1d3e4d;
 }
 
@@ -144,13 +144,25 @@ ul {
 }
 
 /* Profile Picture */
-.image {
-    height: 500px;
-    width: 500px;
-    border-radius: 100%;
-    border: 2px solid #1d3e4d;
+#my_image {
+    width: 450px;
+}
+.my_image_click {
+    margin-top: 2.5%;
+    height: 0;
+    width: 450px;
+    overflow: hidden;
     background-image: url(images/me.jpg);
+    border-radius: 10px;
     background-size: cover;
+    animation: slide 2s ease forwards;
+}
+
+@keyframes slide {
+    from {height: 0;
+        width: 450px;}
+    to {height: 500px;
+        border: 2px solid #1d3e4d}
 }
 
 /* Outer, Inner Containers */
@@ -401,8 +413,6 @@ footer:hover {
     border-top: 1px solid #0adf03a4;
     background-color: #11171b;
 }
-
-
 
 
 
