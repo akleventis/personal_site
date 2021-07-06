@@ -38,4 +38,5 @@ function loop() {
 
 function img() {
     document.getElementById("my_image").className="my_image_click";
+    document.getElementById("t-c").style.justifyContent = "space-evenly";
 }   
