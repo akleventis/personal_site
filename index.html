@@ -23,9 +23,17 @@
     <title>My Site</title>
 </head>
 
-<body onload="loop()">
+<body class="" onload="loop()">
     <header>
         <div class="heading">
+            <div class=switch-container>
+                <img src="images/moon.png" width="28px" height="28px"/>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider-container round"></span>
+                </label>
+                <img src="images/sun.png" width="30px" height="30px"/>
+            </div>
             <h3>Alex Leventis</h3>
             <div class="nav-container">
                 <p><a href="#about">About</a></p>
@@ -70,7 +78,7 @@
             <h4>Resume</h4>
             <h5>Education</h5>
             <div>
-                <a href="https://www.waketech.edu/" target="_blank"><img class="logo wake" src="images/wake.png"
+                <a href="https://www.waketech.edu/" target="_blank"><img class="logo wake" id="wake" src="images/wake.png"
                         height=50px width=50px></a>
                 <p><b>Wake Technical Community College</b></a>
                     <span class="right">2020 - 2022</span>

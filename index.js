@@ -40,3 +40,13 @@ function img() {
     document.getElementById("my_image").className="my_image_click";
     document.getElementById("t-c").style.justifyContent = "space-evenly";
 }   
+
+const mode = document.querySelector('input');
+const wake = document.getElementById('wake')
+var src = ["/images/wake.png", "/images/wake2.png"]
+var x = 0
+mode.addEventListener('change', () => {
+    document.body.classList.toggle('light-mode');
+    wake.src = (x%2==1) ? "/images/wake.png" : "/images/wake2.png";
+    x++;
+}); 
