@@ -183,6 +183,7 @@ ul {
     border-radius: 10px;
     background-size: cover;
     animation: slide 2s ease forwards;
+    transition: 2000ms;
 }
 
 @keyframes slide {

@@ -32,7 +32,7 @@ function loop() {
     i++;
     j++;
     if (i < lst1.length) {
-        setTimeout(loop, 2500);
+        setTimeout(loop, 2200);
     }
 }
 
@@ -42,11 +42,15 @@ function img() {
 }   
 
 const mode = document.querySelector('input');
-const wake = document.getElementById('wake')
+const wake = document.getElementById('wake');
+const me = document.getElementById('my_image');
 var src = ["/images/wake.png", "/images/wake2.png"]
 var x = 0
+var y = 0
 mode.addEventListener('change', () => {
     document.body.classList.toggle('light-mode');
     wake.src = (x%2==1) ? "/images/wake.png" : "/images/wake2.png";
+    me.style.backgroundImage = (y%2==1) ? "url(images/me.jpg)" : "url(images/me2.jpg)";
+    y++;
     x++;
 }); 
