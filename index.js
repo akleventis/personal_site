@@ -6,7 +6,7 @@ var lst1 = [["1", "> print(\"hey i'm alex\")"], ["2", "> print(hometown)"],
 var lst2 = [["a", " hey i'm alex"], ["b", " Santa Maria, Ca"],
 ["c", " [\"Snowboarding\", \"Biking\", \"Coding\", \"Books\"]"], ["d", " Associates of Applied Science in Computer Programming and Development"],
 ["e", "<a href=\"document/resume.pdf\" target=\"_blank\">resume.pdf</a>"], ["f", " [<a href=\"https://github.com/akleventis\" target=\"_blank\">github.com</a>, <a href=\"https://www.linkedin.com/in/alex-leventis-ab443220b/\" target=\"_blank\">linkdin.com</a>]"],
-["g", " alex.leventis1@gmail.com"], ["h", "<a style=\"cursor:pointer\">Click me!</a>"]]
+["g", "<a href=\"mailto:alex.leventis1@gmail.com\">alex.leventis1@gmail.com</a>"], ["h", "<a style=\"cursor:pointer\">Click me!</a>"]]
 
 function terminal(key, value) {
     var app = document.getElementById(key);
