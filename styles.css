@@ -339,7 +339,6 @@ ul {
 }
 .lst {
     height: 250px;
-
 }
 
 /* wake bitly logo  */
@@ -617,24 +616,77 @@ input:checked + .slider-container {
         to {height: 300px;
             border: 2px solid var(--headerfooterBackground)}
     }
+    .git {
+        background-image: url(images/git.png);
+        background-size: cover;
+        height: 60px;
+        position: absolute;
+        width: 60px;
+        left: 255px;
+        bottom: 275px;
+        margin-top: 0px;
+        border-radius: 10px;
+        transform: 0;
+    } 
+    .box:hover .git {
+        transform: translateY(0) translateX(0);
+    } 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .terminal {
         font-size: .8em;
     }
+    .inner h5 {
+        margin: 20px 0 5px 0;
+    }
     .one {
         font-size: .8em;
-        margin-right: 0;
+    }
+    .lst {
+        height: 150px;
+    }
+    .one div {
+        margin-top: 0;
     }
     .code {
         width: 55px;
     }
     .logo {
-        right: 89%;
+        right: 90%;
         height: 35px;
         width: 35px;
+        border-radius: 50%;
+        background-color: var(--hoverBackground);
+        border: 1px solid var(--hoverBorder);
     }
-}
+    .code {
+        font-family: 'Share Tech Mono', monospace;
+        color: var(--terminalText);
+        border: 2px solid var(--blueBorder);
+        background-color: var(--hoverBackground);
+        position: absolute;
+        left: 75%;
+        transform: translateY(-35px);
+        width: 80px;
+        text-align: center;
+    }
+    .inner {
+        background-color: var(--hoverDark);
+        padding: 2%;
+        border: 2px solid var(--hoverBorder);
+        border-radius: 10px;
+        margin: 20px 0 20px 0;
+    }
+    .box {
+        border: 2px solid var(--linkHover);
+        margin-top: 5px;
+    }
+    .lang a {
+        color: var(--terminalText);
+        border: 2px solid var(--blueBorder);
+        background-color: var(--hoverBackground);
+    }
 
+}
 
