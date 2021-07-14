@@ -246,6 +246,7 @@ ul {
     border-radius: 30px;
     display: inline-block;
     padding: 8px 25px 8px 25px;
+    transition: border 500ms;
 }
 
 .one:hover h5 {
@@ -619,5 +620,21 @@ input:checked + .slider-container {
         color: var(--terminalText);
         border: 2px solid var(--blueBorder);
         background-color: var(--hoverBackground);
+    }
+    .heading:hover .nav-container {
+        border-bottom: 2px solid var(--blueBorder);
+    }
+    footer:hover {
+        border-top: 1px solid var(--blueBorder);
+    }
+    .inner h5 {
+        border: 1px solid var(--blueBorder);
+    }
+    
+    .one:hover h5 {
+        border: 1px solid var(--blueBorder);
+    }
+    .switch-container {
+        right: 1%;
     }
 }
