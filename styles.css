@@ -172,6 +172,7 @@ ul {
     border-radius: 10px;
     background-size: cover;
     transition: background-image 600ms;
+    border: 1px solid var(--blueBorder);
 }
 
 /* Outer, Inner Containers */
