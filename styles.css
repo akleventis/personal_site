@@ -560,17 +560,11 @@ input:checked + .slider-container {
     }
 
     .git {
-        background-image: url(images/git.png);
-        background-size: cover;
-        height: 60px;
-        position: absolute;
-        width: 60px;
-        left: 255px;
-        bottom: 275px;
-        margin-top: 0px;
-        border-radius: 10px;
-        transform: 0;
-    } 
+        height: 45px;
+        width: 45px;
+        left: 270px;
+        top: 10px;
+    }
     .box:hover .git {
         transform: translateY(0) translateX(0);
     } 
