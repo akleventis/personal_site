@@ -569,15 +569,20 @@ input:checked + .slider-container {
     .box:hover .git {
         transform: translateY(0) translateX(0);
     } 
+    .inner h5 {
+        border: none;
+        border-bottom: 1px solid var(--blueBorder);
+        padding: 5px 5px 0px 5px;
+        border-radius: 3px;
+        margin: 5px 0 10px 0;
+    }
 }
 
 @media (max-width: 500px) {
     .terminal {
         font-size: .8em;
     }
-    .inner h5 {
-        margin: 20px 0 5px 0;
-    }
+
     .one {
         font-size: .8em;
     }
@@ -591,7 +596,7 @@ input:checked + .slider-container {
         width: 55px;
     }
     .logo {
-        right: 90%;
+        right: 92%;
         height: 35px;
         width: 35px;
         border-radius: 50%;
@@ -640,5 +645,28 @@ input:checked + .slider-container {
     }
     .switch-container {
         right: 1%;
+    }
+    .inner h5 {
+        border: none;
+        border-bottom: 1px solid var(--blueBorder);
+        padding: 5px 5px 0px 5px;
+        border-radius: 3px;
+        margin: 5px 0 10px 0;
+    }
+}
+@media (max-width: 400px) {
+    .logo {
+        right: 90%;
+    }
+}
+@media (max-width: 400px) {
+    .logo {
+        right: 87%;
+    }
+}
+@media (max-width: 340px) {
+    .git {
+        left: 240px;
+        top: 10px;
     }
 }

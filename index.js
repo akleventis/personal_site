@@ -1,11 +1,11 @@
 var lst1 = [["1", "> print(\"hey i'm alex\")"], ["2", "> print(hometown)"],
 ["3", "> print(interests)"], ["4", "> print(degree)"],
 ["5", "> print(resume)"], ["6", "> print(links)"],
-["7", "> print(email)"], ["8", "> alex.image()"], ["9", ""]]
+["7", "> print(email)"], ["8", "> alex.image()"], ["9", "> "]]
 
 var lst2 = [["a", " hey i'm alex"], ["b", " Santa Maria, Ca"],
 ["c", " [\"Snowboarding\", \"Biking\", \"Coding\", \"Books\"]"], ["d", " Associates of Applied Science in Computer Programming and Development"],
-["e", "<a href=\"document/resume.pdf\" target=\"_blank\">resume.pdf</a>"], ["f", " [<a href=\"https://github.com/akleventis\" target=\"_blank\">github.com</a>, <a href=\"https://www.linkedin.com/in/alex-leventis-ab443220b/\" target=\"_blank\">linkdin.com</a>]"],
+["e", "<a href=\"document/resume.pdf\" target=\"_blank\">resume.pdf</a>"], ["f", " [<a href=\"https://github.com/akleventis\" target=\"_blank\">github.com</a>, <a href=\"https://www.linkedin.com/in/alex-leventis-ab443220b/\" target=\"_blank\">linkedin.com</a>]"],
 ["g", "<a href=\"mailto:alex.leventis1@gmail.com\">alex.leventis1@gmail.com</a>"], ["h", "<a style=\"cursor:pointer\">Click me!</a>"]]
 
 function terminal(key, value) {
