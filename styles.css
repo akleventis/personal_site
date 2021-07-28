@@ -246,15 +246,10 @@ ul {
 .inner h5 {
     margin: 40px 0 15px 0;
     font-size: 1em;
-    border: 1px solid transparent;
-    border-radius: 30px;
+    border-bottom: 1px solid var(--blueBorder);
+    border-radius: 5px;
     display: inline-block;
     padding: 8px 25px 8px 25px;
-    transition: border 500ms;
-}
-
-.one:hover h5 {
-    border: 1px solid var(--blueBorder);
 }
 
 
@@ -299,7 +294,7 @@ ul {
 .logo {
     position: absolute;
     padding: 3px;
-    right: 96%;
+    left: -25px;
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid transparent;
@@ -517,6 +512,11 @@ input:checked + .slider-container {
   .slider-container.round:before {
     border-radius: 50%;
   }
+@media (max-width: 1450px) {
+    .logo{
+        left: -20px;
+    }
+}
 @media (max-width: 1035px) {
     .inner {
         width: 100%;
@@ -529,7 +529,7 @@ input:checked + .slider-container {
     .logo {
         height: 40px;
         width: 40px;
-        right: 95%;
+        left: -15px;
 
     }
     body {
@@ -539,7 +539,7 @@ input:checked + .slider-container {
 }
 @media (max-width: 750px) {
     .logo {
-        right: 94%;
+        left: -10px;
     }
     .code {
         left: 75%;
@@ -551,9 +551,6 @@ input:checked + .slider-container {
     }
 }
 @media (max-width: 555px) {
-    .logo {
-        right: 92%;
-    }
     .my_image_click{
         border-radius: 50%;
         height: 300px;
@@ -569,13 +566,6 @@ input:checked + .slider-container {
     .box:hover .git {
         transform: translateY(0) translateX(0);
     } 
-    .inner h5 {
-        border: none;
-        border-bottom: 1px solid var(--blueBorder);
-        padding: 5px 5px 0px 5px;
-        border-radius: 3px;
-        margin: 5px 0 10px 0;
-    }
 }
 
 @media (max-width: 500px) {
@@ -596,10 +586,9 @@ input:checked + .slider-container {
         width: 55px;
     }
     .logo {
-        right: 92%;
         height: 35px;
         width: 35px;
-        border-radius: 50%;
+        left: -5px;
         background-color: var(--hoverBackground);
         border: 1px solid var(--hoverBorder);
     }
@@ -636,32 +625,12 @@ input:checked + .slider-container {
     footer:hover {
         border-top: 1px solid var(--blueBorder);
     }
-    .inner h5 {
-        border: 1px solid var(--blueBorder);
-    }
-    
-    .one:hover h5 {
-        border: 1px solid var(--blueBorder);
-    }
     .switch-container {
         right: 1%;
     }
     .inner h5 {
-        border: none;
-        border-bottom: 1px solid var(--blueBorder);
-        padding: 5px 5px 0px 5px;
-        border-radius: 3px;
-        margin: 5px 0 10px 0;
-    }
-}
-@media (max-width: 400px) {
-    .logo {
-        right: 90%;
-    }
-}
-@media (max-width: 400px) {
-    .logo {
-        right: 87%;
+        padding: 0px 5px 0px 5px;
+        margin: 15px 0 15px 0;
     }
 }
 @media (max-width: 340px) {
