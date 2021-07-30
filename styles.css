@@ -10,7 +10,7 @@
     --hoverBorder: #0adf03a4;
     --terminalText: #09ff00;
     --footerA: #a9a9aa;
-    --siteHover: #41492e;
+    --siteHover: #1e4a6ea6;
 }
 
 .light-mode {
@@ -23,7 +23,7 @@
     --hoverBorder: #000000;
     --terminalText: #0b2208;
     --footerA: #000000;
-    --siteHover: #a2cae6;
+    --siteHover: #a2cae667;
 }
 
 body {
@@ -33,6 +33,9 @@ body {
     color: var(--bodyFont);    
     font-size: 20px;
     transition: 500ms;
+}
+html {
+    scroll-behavior: smooth;
 }
 a {
     text-decoration: none;
