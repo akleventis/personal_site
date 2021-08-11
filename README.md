@@ -1,6 +1,6 @@
 Portfolio Site
 ----
-Repo for my personal site. Hosted through AWS using Cloudfront for Hypertext Transfer Protocol Secure (https)
+Repo for my personal site. Hosted through AWS using Cloudfront for https
 
 🚀 [Link to website](https://www.alexleventis.com/) 🚀
 
