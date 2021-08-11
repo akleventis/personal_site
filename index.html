@@ -1,206 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- styles.css  -->
     <link rel="stylesheet" href="styles.css" />
     <!-- AOS  -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- TypeWriter  -->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <!-- Icon  -->
-    <link rel="icon" href="images/icon.png">
+    <link rel="icon" href="images/icon.png" />
     <!-- Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
 
     <title>Alex</title>
-</head>
+  </head>
 
-<body class="" onload="loop()">
+  <body onload="loop()">
     <header>
-        <div class="heading">
-            <div class=switch-container>
-                <img src="images/moon.png" width="28px" height="28px" />
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider-container round"></span>
-                </label>
-                <img src="images/sun.png" width="30px" height="30px" />
-            </div>
-            <h3>Alex Leventis</h3>
-            <div class="nav-container">
-                <p><a href="#about">About</a></p>
-                <p><a href="#resume">Resume</a></p>
-                <p><a href="#projects">Projects</a></p>
-            </div>
+      <div class="heading">
+        <div class="switch-container">
+          <img src="images/moon.png" width="28px" height="28px" />
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider-container round"></span>
+          </label>
+          <img src="images/sun.png" width="30px" height="30px" />
         </div>
-        <div id="about" class="about-container">
-            <div class="terminal-container" id="t-c">
-                <div data-aos="fade-right" data-aos-duration="3000" class="terminal">
-                    <div class="t-head-container">
-                        <div class="red"></div>
-                        <div class="yellow"></div>
-                        <div class="green"></div>
-                    </div>
-                    <p id="1"></p>
-                    <i id="a"></i>
-                    <p id="2"></p>
-                    <i id="b"></i>
-                    <p id="3"></p>
-                    <i id="c"></i>
-                    <p id="4"></p>
-                    <i id="d"></i>
-                    <p id="5"></p>
-                    <i id="e"></i>
-                    <p id="6"></p>
-                    <i id="f"></i>
-                    <p id="7"></p>
-                    <i id="g"></i>
-                    <p id="8"></p>
-                    <i id="h" onclick="img()"></i>
-                    <p id="9"></p>
-                </div>
-                <div id="my_image"></div>
-            </div>
-
+        <h3>Alex Leventis</h3>
+        <div class="nav-container">
+          <p><a href="#about">About</a></p>
+          <p><a href="#resume">Resume</a></p>
+          <p><a href="#projects">Projects</a></p>
         </div>
+      </div>
+      <div id="about" class="about-container">
+        <div class="terminal-container" id="t-c">
+          <div data-aos="fade-right" data-aos-duration="3000" class="terminal">
+            <div class="t-head-container">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <p id="1"></p>
+            <i id="a"></i>
+            <p id="2"></p>
+            <i id="b"></i>
+            <p id="3"></p>
+            <i id="c"></i>
+            <p id="4"></p>
+            <i id="d"></i>
+            <p id="5"></p>
+            <i id="e"></i>
+            <p id="6"></p>
+            <i id="f"></i>
+            <p id="7"></p>
+            <i id="g"></i>
+            <p id="8"></p>
+            <i id="h" onclick="img()"></i>
+            <p id="9"></p>
+          </div>
+          <div id="my_image"></div>
+        </div>
+      </div>
     </header>
     <div class="outer">
-        <a id="resume" class="anchor"></a>
-        <div class="inner one">
-            <h4>Resume</h4>
-            <h5>Education</h5>
-            <div>
-                <a href="https://www.waketech.edu/" target="_blank"><img class="logo wake" id="wake"
-                        src="images/wake.png" height=50px width=50px></a>
-                <p><b>Wake Technical Community College</b></a>
-                    <span class="right">2020 - 2022</span>
-                </p>
-                <p><i>Associates of Applied Science in Computer Programming and Development</i>
-                    <span class="right">Raleigh, Nc</span>
-                </p>
-            </div>
-            <p class="c-lst">Related Coursework</p>
-            <ul class="lst">
-                <li>Computing Fundamentals</li>
-                <a href="https://www.oracle.com/java/" target="_blank" class="code">Java</a>
-                <li>Web, Pgm, Db Foundation</li>
-                <li>Operating Systems Concepts</li>
-                <a href="https://www.python.org/" target="_blank" class="code">Python</a>
-                <li>Network and Security Foundation</li>
-                <li>Database Programming</li>
-                <a href="https://www.javascript.com/" target="_blank" class="code">Javascript</a>
-                <li>Web Markup and Scripting</li>
-                <li>Software Quality Assurance</li>
-                <a href="https://en.wikipedia.org/wiki/SQL" target="_blank" class="code">SQL</a>
-                <li>Software Development</li>
-                <li>Advanced Python & Java Programming</li>
-                <a href="https://www.w3.org/standards/webdesign/htmlcss.html" target="_blank" class="code">HTML &
-                    CSS</a>
-            </ul>
-            <h5 class="e">Experience</h5>
-            <div>
-                <a href="https://bitly.com/" target="_blank"><img class="logo bit" src="images/bitly.png" height=50px
-                        width=50px></a>
-                <p><b>Bitly</b>
-                    <span class="right">Summer 2021</span>
-                </p>
-                <p><i>Backend Engineering Intern</i><span class="right">Remote</span>
-                </p>
-            </div>
-            <ul>
-
-                <li>list item</li>
-                <li>list item</li>
-                <a href="https://golang.org/" target="_blank" class="code">Go</a>
-                <li>list item</li>
-                <li>list item</li>
-                <a href="https://www.python.org/" target="_blank" class="code">Python</a>
-            </ul>
+      <a id="resume"></a>
+      <div class="inner one">
+        <h4>Resume</h4>
+        <h5>Education</h5>
+        <div>
+          <a href="https://www.waketech.edu/" target="_blank"><img class="logo" id="wake" src="images/wake.png" height="50px" width="50px" /></a>
+          <p>
+            <b>Wake Technical Community College</b>
+            <span class="right">2020 - 2022</span>
+          </p>
+          <p>
+            <i>Associates of Applied Science in Computer Programming and Development</i>
+            <span class="right">Raleigh, Nc</span>
+          </p>
         </div>
+        <p class="c-lst">Related Coursework</p>
+        <ul class="lst">
+          <li>Computing Fundamentals</li>
+          <a href="https://www.oracle.com/java/" target="_blank" class="code">Java</a>
+          <li>Web, Pgm, Db Foundation</li>
+          <li>Operating Systems Concepts</li>
+          <a href="https://www.python.org/" target="_blank" class="code">Python</a>
+          <li>Network and Security Foundation</li>
+          <li>Database Programming</li>
+          <a href="https://www.javascript.com/" target="_blank" class="code">Javascript</a>
+          <li>Web Markup and Scripting</li>
+          <li>Software Quality Assurance</li>
+          <a href="https://en.wikipedia.org/wiki/SQL" target="_blank" class="code">SQL</a>
+          <li>Software Development</li>
+          <li>Advanced Python & Java Programming</li>
+          <a href="https://www.w3.org/standards/webdesign/htmlcss.html" target="_blank" class="code">HTML & CSS</a>
+        </ul>
+        <h5>Experience</h5>
+        <div>
+          <a href="https://bitly.com/" target="_blank"><img class="logo" src="images/bitly.png" height="50px" width="50px" /></a>
+          <p>
+            <b>Bitly</b>
+            <span class="right">Summer 2021</span>
+          </p>
+          <p><i>Backend Engineering Intern</i><span class="right">Remote</span></p>
+        </div>
+        <ul>
+          <li>list item</li>
+          <li>list item</li>
+          <a href="https://golang.org/" target="_blank" class="code">Go</a>
+          <li>list item</li>
+          <li>list item</li>
+          <a href="https://www.python.org/" target="_blank" class="code">Python</a>
+        </ul>
+      </div>
     </div>
+    <a id="projects"></a>
     <div class="outer">
-        <a id="projects"></a>
-        <div class="inner two">
-            <h4>Projects</h4>
-            <div class="row">
-                <div data-aos="zoom-in" data-aos-duration="1500" class="box">
-                    <a href="https://github.com/akleventis/Cat-Dog-Service" target="_blank" class="git"></a>
-                    <img src="images/dog.png" />
-                    <p class="text">Cat/Dog API developed with Spring boot as a foundation for simple CRUD
-                        operations on a database. Client is able to add, update, and delete the cats and dogs stored in
-                        the database. Organized by controller, entity, repository,
-                        and service packages.
-                    </p>
-                    <div class="lang">
-                        <a href="https://www.oracle.com/java/" target="_blank">Java</a>
-                        <a href="https://en.wikipedia.org/wiki/SQL" target="_blank">SQL</a>
-                        <a href="https://spring.io/" target="_blank">Spring</a>
-                    </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="1500" class="box">
-                    <a href="https://github.com/akleventis/Cat-Project" target="_blank" class="git"></a>
-                    <img src="images/cat.png" />
-                    <a href="https://catapi.alexleventis.com" target="_blank" name="site-link" class="site-link"></a>
-                    <p class="text">Used an XMLHttpRequest to fetch random cat images from this API. Images are
-                        displayed with buttons allowing for users to move images around, stack them on top of each
-                        other, and clear the screen to start over.
-                    </p>
-                    <div class="lang">
-                        <a href="https://www.javascript.com/" target="_blank">JavaScript</a>
-                        <a href="https://www.w3.org/standards/webdesign/htmlcss.html" target="_blank">HTML & CSS</a>
-                    </div>
-                </div>
+      
+      <div class="inner two">
+        <h4>Projects</h4>
+        <div class="row">
+          <div data-aos="zoom-in" data-aos-duration="1500" class="box">
+            <a href="https://github.com/akleventis/Cat-Dog-Service" target="_blank" class="git"></a>
+            <img src="images/dog.png" />
+            <p class="text">
+              Cat/Dog API developed with Spring boot as a foundation for simple CRUD operations on a database. Client is able to add, update, and
+              delete the cats and dogs stored in the database. Organized by controller, entity, repository, and service packages.
+            </p>
+            <div class="lang">
+              <a href="https://www.oracle.com/java/" target="_blank">Java</a>
+              <a href="https://en.wikipedia.org/wiki/SQL" target="_blank">SQL</a>
+              <a href="https://spring.io/" target="_blank">Spring</a>
             </div>
-            <div class="row">
-                <div data-aos="zoom-in" data-aos-duration="1500" class="box">
-                    <a href="https://github.com/akleventis/Resume-Builder" class="git" target="_blank"></a>
-                    <img src="images/resume.png" />
-                    <a href="https://resumebuilder.alexleventis.com" target="_blank" name="site-link" class="site-link"></a>
-                    <p class="text">Application designed to build and format a resume. User interface prompts for
-                        information, inputs can be dynamically created, and values are injected into the document. On
-                        submit, a pop-up window will appear with the completed resume.
-                    </p>
-                    <div class="lang">
-                        <a href="https://www.javascript.com/" target="_blank">JavaScript</a>
-                        <a href="https://www.w3.org/standards/webdesign/htmlcss.html" target="_blank">HTML & CSS</a>
-                    </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="1500" class="box">
-                    <a href="https://github.com/akleventis/Spring-Subdivision-Project" target="_blank" class="git"></a>
-                    <img src="images/house.png" />
-                    <p class="text">Built throughout the semester while studying core concepts of OOP. This simple
-                        application lets users create house objects and form them together into subdivisions. Methods
-                        implemented include sorting, updating, writing to a text file...
-                        etc.
-                    </p>
-                    <div class="lang">
-                        <a href="https://www.oracle.com/java/" target="_blank">Java</a>
-                    </div>
-                </div>
-
+          </div>
+          <div data-aos="zoom-in" data-aos-duration="1500" class="box">
+            <a href="https://github.com/akleventis/Cat-Project" target="_blank" class="git"></a>
+            <img src="images/cat.png" />
+            <a href="https://catapi.alexleventis.com" target="_blank" name="site-link" class="site-link"></a>
+            <p class="text">
+              Used an XMLHttpRequest to fetch random cat images from this API. Images are displayed with buttons allowing for users to move images
+              around, stack them on top of each other, and clear the screen to start over.
+            </p>
+            <div class="lang">
+              <a href="https://www.javascript.com/" target="_blank">JavaScript</a>
+              <a href="https://www.w3.org/standards/webdesign/htmlcss.html" target="_blank">HTML & CSS</a>
             </div>
+          </div>
         </div>
-
+        <div class="row">
+          <div data-aos="zoom-in" data-aos-duration="1500" class="box">
+            <a href="https://github.com/akleventis/Resume-Builder" class="git" target="_blank"></a>
+            <img src="images/resume.png" />
+            <a href="https://resumebuilder.alexleventis.com" target="_blank" name="site-link" class="site-link"></a>
+            <p class="text">
+              Application designed to build and format a resume. User interface prompts for information, inputs can be dynamically created, and values
+              are injected into the document. On submit, a print window will appear with the completed resume.
+            </p>
+            <div class="lang">
+              <a href="https://www.javascript.com/" target="_blank">JavaScript</a>
+              <a href="https://www.w3.org/standards/webdesign/htmlcss.html" target="_blank">HTML & CSS</a>
+            </div>
+          </div>
+          <div data-aos="zoom-in" data-aos-duration="1500" class="box">
+            <a href="https://github.com/akleventis/Spring-Subdivision-Project" target="_blank" class="git"></a>
+            <img src="images/house.png" />
+            <p class="text">
+              Built throughout the semester while studying core concepts of OOP. This simple application lets users create house objects and form them
+              together into subdivisions. Methods implemented include sorting, updating, writing to a text file... etc.
+            </p>
+            <div class="lang">
+              <a href="https://www.oracle.com/java/" target="_blank">Java</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
-        <p>© Alex Leventis 2021<span class="link"><a href="https://bit.ly/2Tnd6fW"
-                    target="_blank">Linkdin</a></span><span class="link"><a href="https://bit.ly/3wcMRaV"
-                    target="_blank">Github</a></span></p>
+      <p>
+        © Alex Leventis 2021<span class="link"><a href="https://bit.ly/2Tnd6fW" target="_blank">Linkdin</a></span
+        ><span class="link"><a href="https://bit.ly/3wcMRaV" target="_blank">Github</a></span>
+      </p>
     </footer>
     <script src="index.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
-
+  </body>
 </html>
