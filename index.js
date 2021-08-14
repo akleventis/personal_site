@@ -51,7 +51,7 @@ mode.addEventListener('change', () => {
     wake.src = (x%2==1) ? "/images/wake.png" : "/images/wake2.png";
     sites[0].style.backgroundImage = (x%2==1) ? "url(images/site.png)" : "url(images/site2.png";
     sites[1].style.backgroundImage = (x%2==1) ? "url(images/site.png)" : "url(images/site2.png";
-    me.style.backgroundImage = (x%2==1) ? "url(images/me.jpg)" : "url(images/me3.png)";
+    me.style.backgroundImage = (x%2==1) ? "url(images/me.jpg)" : "url(images/me2.jpg)";
     x++;
 }); 
 
