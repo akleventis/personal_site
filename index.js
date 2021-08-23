@@ -55,3 +55,11 @@ mode.addEventListener('change', () => {
     x++;
 }); 
 
+var lastScrollUp;
+navbar = document.getElementById('heading');
+window.addEventListener('scroll',function(){
+var scrollUp = window.pageYOffset || document.documentElement.scrollUp;
+(scrollUp > lastScrollUp ? navbar.style.top='-80px' : navbar.style.top = '0');
+lastScrollUp = scrollUp;
+});
+
