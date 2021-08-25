@@ -555,6 +555,9 @@ input:checked + .slider-container:before {
   body {
     font-size: 18px;
   }
+  .about-container {
+    padding-top: 90px;
+  }
 }
 @media (max-width: 750px) {
   .logo {
@@ -675,20 +678,29 @@ input:checked + .slider-container:before {
   }
   
 }
-@media (max-width: 412px) {
+@media (max-width: 414px) {
   .terminal {
-    height: 460px;
+    height: 470px;
+  }
+  .t-head-container{
+    margin-bottom: 15px;
   }
   .code {
     font-size: .7em;
     width: 50px;
   }
 }
-
+@media (max-width: 400px) {
+  .t-head-container {
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 340px) {
   .terminal {
-    height: 475px;
+    height: 450px;
+    font-size: .7em;
   }
+
   .git {
     left: 240px;
     top: 10px;
