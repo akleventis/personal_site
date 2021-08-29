@@ -144,7 +144,7 @@ ul {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   background-color: rgba(58, 57, 57, 0.5);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border-bottom: 1px solid var(--blue-border);
 }
 
@@ -310,7 +310,8 @@ h5:nth-of-type(2){
   transition: 1s;
 }
 .inner:nth-of-type(1){
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
 }
 .one:hover .logo {
   border: 1px solid var(--hover-border);
@@ -321,11 +322,6 @@ h5:nth-of-type(2){
 #projects {
   margin-bottom: 30px;
   padding-top: 0;
-}
-
-/* second .inner div  */
-.two {
-  margin-bottom: 60px;
 }
 
 .row {
@@ -438,7 +434,7 @@ h5:nth-of-type(2){
 .more {
   margin-bottom: 0;
   text-align: center;
-  font-size: .85em;
+  font-size: .75em;
 }
 
 /* footer  */
@@ -484,8 +480,12 @@ footer:hover {
 .switch {
   position: relative;
   display: inline-block;
-  width: 48px;
-  height: 16px;
+  width: 40px;
+  height: 12px;
+}
+
+.switch-container img{
+  margin-bottom: 5px;
 }
 
 .switch input {
@@ -496,7 +496,7 @@ footer:hover {
 .slider-container {
   position: absolute;
   cursor: pointer;
-  top: 0px;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -510,8 +510,8 @@ footer:hover {
 .slider-container:before {
   position: absolute;
   content: "";
-  height: 13px;
-  width: 13px;
+  height: 9px;
+  width: 10px;
   background-color: #131c2b;
   border: 1px solid #008616;
   -webkit-transition: 1s;
@@ -528,7 +528,7 @@ input:checked + .slider-container {
 input:checked + .slider-container:before {
   background-color: #62aae6;
   border: 1px solid #07202e;
-  transform: translateX(33px);
+  transform: translateX(27px);
 }
 
 /* Rounded sliders */
@@ -664,8 +664,6 @@ input:checked + .slider-container:before {
     border-top: 1px solid var(--blue-border);
   }
   .switch {
-    position: relative;
-    display: inline-block;
     width: 27px;
     height: 11px;
   }
@@ -680,7 +678,6 @@ input:checked + .slider-container:before {
   .switch-container img{
     height: 20px;
     width: 20px;
-    margin-bottom: 5px;
   }
   
 }
@@ -697,13 +694,13 @@ input:checked + .slider-container:before {
   }
 }
 @media (max-width: 400px) {
-  .t-head-container {
-    margin-bottom: 20px;
+  .terminal {
+    height: 450px;
   }
 }
 @media (max-width: 340px) {
   .terminal {
-    height: 450px;
+    height: 420px;
     font-size: .7em;
   }
 
