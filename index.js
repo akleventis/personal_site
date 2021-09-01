@@ -1,9 +1,9 @@
-var lst1 = [["1", "> print(\"hey i'm alex\")"], ["2", "> print(hometown)"],
+var lst1 = [["1", "> print(\"hey i'm alex\")"], ["2", "> print(location)"],
 ["3", "> print(interests)"], ["4", "> print(degree)"],
 ["5", "> print(resume)"], ["6", "> print(links)"],
 ["7", "> print(email)"], ["8", "> alex.image()"], ["9", "> "]]
 
-var lst2 = [["a", " hey i'm alex"], ["b", " Santa Maria, Ca"],
+var lst2 = [["a", " hey i'm alex"], ["b", " Raleigh, Nc"],
 ["c", " [\"Snowboarding\", \"Biking\", \"Fitness\", \"Coding\", \"Piano\", \"Ukulele\"]"], ["d", " Associates of Applied Science in Computer Programming and Development"],
 ["e", "<a href=\"document/resume.pdf\" target=\"_blank\">resume.pdf</a>"], ["f", " [<a href=\"http://alexcod.es/github\" target=\"_blank\">github.com</a>, <a href=\"http://alexcod.es/linkedin\" target=\"_blank\">linkedin.com</a>]"],
 ["g", "<a href=\"mailto:alex.leventis1@gmail.com\">alex.leventis1@gmail.com</a>"], ["h", "<a style=\"cursor:pointer\">Click me!</a>"]]
