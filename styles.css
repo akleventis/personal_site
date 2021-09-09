@@ -107,6 +107,7 @@ ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 .terminal {
   font-family: "Share Tech Mono", monospace;
@@ -168,10 +169,10 @@ ul {
 /* Profile Picture */
 .my_image_click {
   margin: 10px;
-  height: 500px;
-  width: 500px;
+  height: 420px;
+  width: 420px;
   background-image: url(images/me.jpg);
-  border-radius: 10px;
+  border-radius: 50%;
   background-size: cover;
   transition: background-image 600ms;
   border: 1px solid var(--blue-border);
@@ -586,7 +587,6 @@ input:checked + .slider-container:before {
 }
 @media (max-width: 590px) {
   .my_image_click {
-    border-radius: 50%;
     height: 300px;
     width: 300px;
   }
