@@ -4,7 +4,7 @@ var lst1 = [["1", "> print(\"hey i'm alex\")"], ["2", "> print(location)"],
 ["7", "> print(email)"], ["8", "> alex.image()"], ["9", "> "]]
 
 var lst2 = [["a", " hey i'm alex"], ["b", " Raleigh, Nc"],
-["c", " [\"Reading\", \"Snowboarding\", \"Biking\", \"Fitness\", \"Coding\", \"Piano\", \"Ukulele\"]"], ["d", " Associates of Applied Science in Computer Programming and Development"],
+["c", " [\"Reading\", \"Snowboarding\", \"Biking\", \"Coding\", \"Piano\", \"Ukulele\"]"], ["d", " Associates of Applied Science in Computer Programming and Development"],
 ["e", "<a href=\"document/resume.pdf\" target=\"_blank\">resume.pdf</a>"], ["f", " [<a href=\"http://alexcod.es/github\" target=\"_blank\">github.com</a>, <a href=\"http://alexcod.es/linkedin\" target=\"_blank\">linkedin.com</a>]"],
 ["g", "<a href=\"mailto:alex.leventis1@gmail.com\">alex.leventis1@gmail.com</a>"], ["h", "<a style=\"cursor:pointer\">Click me!</a>"]]
 
@@ -51,7 +51,7 @@ mode.addEventListener('change', () => {
     wake.src = (x%2==1) ? "/images/wake.png" : "/images/wake2.png";
     sites[0].style.backgroundImage = (x%2==1) ? "url(images/site.png)" : "url(images/site2.png";
     sites[1].style.backgroundImage = (x%2==1) ? "url(images/site.png)" : "url(images/site2.png";
-    me.style.backgroundImage = (x%2==1) ? "url(images/me.jpg)" : "url(images/me2.jpg)";
+    me.style.backgroundImage = (x%2==1) ? "url(images/me1.png)" : "url(images/me2.jpg)";
     x++;
 }); 
 
