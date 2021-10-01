@@ -438,9 +438,19 @@ h5:nth-of-type(2){
   text-align: center;
   font-size: .75em;
 }
-
-.text b {
-  text-decoration: underline;
+.in-link {
+  color: var(--body-font);
+  border-bottom: 1px solid transparent;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+.in-link:hover {
+  border-bottom: 1px solid var(--hover-border);
+  color: var(--body-font);
+  font-style: italic;
 }
 
 /* footer  */
