@@ -1,6 +1,7 @@
-Portfolio Site
+Portfolio Site 
 ----
-Repo for my personal site. Hosted through AWS using Cloudfront for https
+- [ ] Depreciated => [Updated Repository with React](https://github.com/akleventis/react_portfolio)
+- [ ] Repo for my personal site. Hosted through AWS using Cloudfront for https
 
 🚀 [Link to website](https://www.alexleventis.com/) 🚀
 
